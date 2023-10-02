@@ -3,9 +3,10 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #222;
-  background-color: #ecf0f1;
+  color: #ffffff;
+  background-color: #000000;
   text-align: center;
+  border:2px dashed red;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 }
 
 a {
-  color: #2574a9;
+  color: #e01b24;
 }
 
 input {
@@ -29,7 +30,26 @@ input {
 
 input#button {
   width: 230px;
+
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
+
+
+
+input#button:hover{ background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);}
+
+
+input#button:active{ transform: translateY(0.25rem);}
 
 .view {
   position: relative;
